@@ -69,6 +69,22 @@ h2 { margin: 0; font-family: var(--serif); font-size: 1.7rem; font-weight: 400; 
 .loop-node .loop-label, .loop-decision .loop-label { fill: var(--ink); font-family: var(--serif); font-size: 17px; letter-spacing: -0.3px; }
 .loop-decision rect { fill: #dfdfd8; stroke: var(--line); stroke-width: 1.5; }
 
+.bridge-map { grid-column: 2; width: 100%; max-width: 980px; margin: 2.2rem 0 0; padding-top: 2rem; border-top: 1px solid var(--line); }
+.bridge-map svg { display: block; width: 100%; height: auto; }
+.bridge-map figcaption { margin-top: 0.85rem; color: var(--muted); font-size: 0.82rem; }
+.bridge-bank { fill: #ecece7; stroke: var(--line); stroke-width: 1; }
+.bridge-water { fill: none; stroke: var(--accent); stroke-width: 1.3; opacity: 0.35; }
+.bridge-water--soft { opacity: 0.2; }
+.bridge-curb { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.bridge-deck { fill: none; stroke: var(--ink); stroke-width: 6; }
+.bridge-rail { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.bridge-tower { fill: none; stroke: var(--ink); stroke-width: 4; }
+.bridge-cable { fill: none; stroke: var(--accent); stroke-width: 1.1; opacity: 0.7; }
+.bridge-node { fill: var(--accent); stroke: var(--accent); }
+.bridge-node--end { fill: var(--line); stroke: none; }
+.bridge-label { fill: var(--ink); font-family: var(--serif); font-size: 18px; letter-spacing: -0.4px; }
+.bridge-note { fill: var(--muted); font-family: var(--sans); font-size: 12px; letter-spacing: 0; }
+
 .publication-list { margin: 0 0 2.2rem; padding: 0; list-style: none; counter-reset: publication; }
 .publication-list li { position: relative; padding: 1.55rem 0 1.7rem 3.2rem; border-top: 1px solid var(--line); counter-increment: publication; }
 .publication-list li:last-child { border-bottom: 1px solid var(--line); }
@@ -92,6 +108,9 @@ h2 { margin: 0; font-family: var(--serif); font-size: 1.7rem; font-weight: 400; 
 .video-card__copy span { color: var(--muted); font-size: 0.86rem; }
 .video-card:hover { color: var(--accent); }
 .video-card:hover .video-thumbnail img { transform: scale(1.035); }
+
+.venture-cta { display: inline-flex; margin-top: 0.4rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.25rem; letter-spacing: -0.02em; text-decoration: none; }
+.venture-cta:hover { border-color: var(--accent); }
 
 .link-list { margin: 0; padding: 0; list-style: none; }
 .link-list li { display: flex; justify-content: space-between; gap: 2rem; padding: 0.95rem 0; border-top: 1px solid var(--line); }
@@ -128,6 +147,8 @@ footer p { margin: 0; }
   .research-map svg { min-width: 680px; }
   .experiment-loop { grid-column: auto; overflow-x: auto; }
   .experiment-loop svg { min-width: 680px; }
+  .bridge-map { grid-column: auto; overflow-x: auto; }
+  .bridge-map svg { min-width: 680px; }
   .impact-grid { grid-template-columns: 1fr; }
   .video-card { grid-template-columns: 1fr; }
   .resume-grid { grid-template-columns: 1fr; gap: 1.8rem; }
